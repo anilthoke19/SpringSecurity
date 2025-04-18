@@ -15,7 +15,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class AppController {
 	@Autowired
 	private ProductService service;
-	
+	// controller 
 	@RequestMapping("/")
 	public String viewHomePage(Model model) {
 		List<Product> listProducts = service.listAll();
